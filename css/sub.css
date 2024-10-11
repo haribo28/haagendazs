@@ -1,0 +1,241 @@
+@charset 'utf-8';
+
+.sub-inner {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.sub-title {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.product {
+    margin-top: 10.5rem;
+}
+
+.sub-title h2 {
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+.sub-title p {
+    font-weight: 500;
+    font-size: 2.6rem;
+    margin-top: 1.5rem;
+}
+
+.product-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10.5rem;
+}
+
+.product-tab li {
+    width: 30rem;
+    height: 6rem;
+}
+
+.product-tab li a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 1.2rem 9rem;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 3px solid var(--gray1-color);
+    transition: 0.4s;
+}
+
+/* 활성화 표시 */
+.product-tab li a.active {
+    font-weight: 600;
+    background: var(--main-color);
+    color: #fff;
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 6px 6px 0 0;
+}
+
+.align-button {
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.85rem 2.3rem;
+    border: 1px solid var(--main-color);
+    border-radius: 7rem;
+    background: #fff;
+    margin-top: 3rem;
+    float: right;
+    position: relative;
+}
+
+.align-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.align-arrow::after {
+    content: "";
+    display: block;
+    background: url(../img/align-arrow.svg) no-repeat 0 0 / cover;
+    width: 0.97rem;
+    height: 0.6rem;
+}
+
+.align-button li.active .align-arrow::after {
+    content: "";
+    display: block;
+    background: url(../img/align-arrow.svg) no-repeat 0 0 / cover;
+    width: 0.97rem;
+    height: 0.6rem;
+    transform: rotate(180deg);
+}
+
+.align-menu {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+
+    display: none;
+    top: 48px;
+    z-index: 100;
+}
+
+.align-menu li a {
+    display: block;
+    /* border: 1px solid #000; */
+    padding: 0.85rem 2rem;
+    background: #fff;
+}
+
+.product-con-item {
+    display: grid;
+    grid-template-columns: 31.5rem 31.5rem 31.5rem;
+    grid-template-columns: 26.25% 26.25% 26.25%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 12.8rem;
+    /* gap: 10.7%; */
+    margin-top: 18.2rem;
+}
+
+.product-con-item li {
+    position: relative;
+}
+
+.product-con-item li p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4.3rem;
+}
+
+.product-con-item li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(96, 6, 36, 0.8) url(../img/hover-search.svg) no-repeat 50%;
+    opacity: 0;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+.product-con-item li:hover::after {
+    opacity: 1;
+}
+
+.paging {
+    margin-top: 11.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.3rem;
+}
+
+.paging a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray3-color);
+    width: 4.8rem;
+    height: 4.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+}
+
+.paging a.active {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.paging a.btn-prev {
+    background: url(../img/paging-arrow-l.svg) no-repeat 50%;
+}
+
+.paging a.btn-next {
+    background: url(../img/paging-arrow-r.svg) no-repeat 50%;
+}
+
+.manuHidden {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+@media (max-width: 1100px) {
+    .sub-inner {
+        width: 89.4rem;
+        width: 87.3%;
+    }
+
+    .sub-title h2 {
+        font-size: 5.5rem;
+    }
+
+    .sub-title p {
+        font-size: 2rem;
+    }
+
+    .product-tab li a {
+        padding: 1.2rem 6rem;
+        font-size: 2rem;
+    }
+
+    .product-con {
+        gap: 9.4rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .product {
+        margin-top: 3.3rem;
+    }
+
+    .sub-title h2 {
+        font-size: 3rem;
+    }
+
+    .sub-title p {
+        font-size: 1.6rem;
+    }
+
+    .product-tab {
+        margin-top: 3rem;
+        overflow-x: auto;
+    }
+
+    .product-tab li a {
+        font-size: 1.6rem;
+    }
+}

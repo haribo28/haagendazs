@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>하겐다즈-모든제품</title>
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/sub.css" />
+
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/sub.js" defer></script>
+    </head>
+    <body>
+        <a href="#main" class="hidden">본문 바로가기</a>
+        <!-- s: header -->
+        <header id="header">
+            <div class="inner">
+                <nav>
+                    <div class="header-logo">
+                        <!-- 태블릿, 모바일 용 메뉴 -->
+                        <a href="main.html" class="tablet-menu">
+                            <strong class="tablet-logo">
+                                <i class="hidden">Haagen-Dazs</i>
+                            </strong>
+                        </a>
+
+                        <h1 class="logo">
+                            <a href="main.html"><i class="hidden">Haagen-Dazs</i></a>
+                        </h1>
+
+                        <div class="search">
+                            <input type="text" />
+                            <button><i class="hidden">검색</i></button>
+                        </div>
+                    </div>
+
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">제품</a>
+                            <ul class="submenu">
+                                <li><a href="sub.html">전체보기</a></li>
+                                <li><a href="#">파인트</a></li>
+                                <li><a href="#">미니컵</a></li>
+                                <li><a href="#">스틱바</a></li>
+                                <li><a href="#">디저트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">멤버십</a></li>
+                        <li><a href="#">매장</a></li>
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- //e: header -->
+
+        <!-- s: main -->
+        <main id="main">
+            <section class="product">
+                <div class="sub-inner">
+                    <div class="sub-title">
+                        <h2>모든 제품</h2>
+                        <p>
+                            매일이 더 달콤해지는 특별한 순간을 위해 준비된 하겐다즈, <br />한 입 한 입이 행복으로
+                            가득합니다.
+                        </p>
+                    </div>
+
+                    <ul class="product-tab">
+                        <li><a href="javascript:onMenuChange('all')" class="product-tab-item active">전체보기</a></li>
+                        <li><a href="javascript:onMenuChange('paint')" class="product-tab-item">파인트</a></li>
+                        <li><a href="javascript:onMenuChange('minicup')" class="product-tab-item">미니컵</a></li>
+                        <li><a href="javascript:onMenuChange('stickbar')" class="product-tab-item">스틱바</a></li>
+                        <li><a href="javascript:onMenuChange('dessert')" class="product-tab-item">디저트</a></li>
+                    </ul>
+
+                    <!-- <button type="button" class="align-button">정렬</button> -->
+                    <ul class="align-button">
+                        <li>
+                            <a href="#" class="align-arrow">정렬</a>
+                            <ul class="align-menu">
+                                <li><a href="#">신상품</a></li>
+                                <li><a href="#">인기상품</a></li>
+                                <li><a href="#">낮은가격</a></li>
+                                <li><a href="#">높은가격</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <div class="product-con">
+                        <ul class="product-con-item">
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-1.jpg" alt="마카롱 바닐라&블루베리 (파인트)" />
+                                    </figure>
+                                    <p class="product-text">마카롱 바닐라&블루베리 (파인트)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-2.jpg" alt="마카롱 더블 초콜릿 가나슈 (파인트)" />
+                                    </figure>
+                                    <p class="product-text">마카롱 더블 초콜릿 가나슈 (파인트)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-3.jpg" alt="마카롱 레몬&유자 (파인트)" />
+                                    </figure>
+                                    <p class="product-text">마카롱 레몬&유자 (파인트)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-4.jpg" alt="바닐라 (미니컵)" />
+                                    </figure>
+                                    <p class="product-text">바닐라 (미니컵)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-5.jpg" alt="딸기 (미니컵)" />
+                                    </figure>
+                                    <p class="product-text">딸기 (미니컵)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-6.jpg" alt="피스타치오 앤 크림 (미니컵)" />
+                                    </figure>
+                                    <p class="product-text">피스타치오 앤 크림 (미니컵)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-7.jpg" alt="쿠키앤크림 (스틱바)" />
+                                    </figure>
+                                    <p class="product-text">쿠키앤크림 (스틱바)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-8.jpg" alt="스트로베리&그린티 (스틱바)" />
+                                    </figure>
+                                    <p class="product-text">스트로베리&그린티 (스틱바)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-9.jpg" alt="벨지안초콜릿&스트로베리 (스틱바)" />
+                                    </figure>
+                                    <p class="product-text">벨지안초콜릿&스트로베리 (스틱바)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-10.jpg" alt="미니블랑 아이스크림 케이크" />
+                                    </figure>
+                                    <p class="product-text">미니블랑 아이스크림 케이크</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-11.jpg" alt="비욘드 쇼콜라 아이스크림 케이크" />
+                                    </figure>
+                                    <p class="product-text">비욘드 쇼콜라 아이스크림 케이크</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-12.jpg" alt="아이스크림&크로플" />
+                                    </figure>
+                                    <p class="product-text">아이스크림&크로플</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="product-con-item">
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-1.jpg" alt="마카롱 바닐라&블루베리 (파인트)" />
+                                    </figure>
+                                    <p class="product-text">마카롱 바닐라&블루베리 (파인트)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-2.jpg" alt="마카롱 더블 초콜릿 가나슈 (파인트)" />
+                                    </figure>
+                                    <p class="product-text">마카롱 더블 초콜릿 가나슈 (파인트)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-3.jpg" alt="마카롱 레몬&유자 (파인트)" />
+                                    </figure>
+                                    <p class="product-text">마카롱 레몬&유자 (파인트)</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="product-con-item">
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-4.jpg" alt="바닐라 (미니컵)" />
+                                    </figure>
+                                    <p class="product-text">바닐라 (미니컵)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-5.jpg" alt="딸기 (미니컵)" />
+                                    </figure>
+                                    <p class="product-text">딸기 (미니컵)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-6.jpg" alt="피스타치오 앤 크림 (미니컵)" />
+                                    </figure>
+                                    <p class="product-text">피스타치오 앤 크림 (미니컵)</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="product-con-item">
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-7.jpg" alt="쿠키앤크림 (스틱바)" />
+                                    </figure>
+                                    <p class="product-text">쿠키앤크림 (스틱바)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-8.jpg" alt="스트로베리&그린티 (스틱바)" />
+                                    </figure>
+                                    <p class="product-text">스트로베리&그린티 (스틱바)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-9.jpg" alt="벨지안초콜릿&스트로베리 (스틱바)" />
+                                    </figure>
+                                    <p class="product-text">벨지안초콜릿&스트로베리 (스틱바)</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="product-con-item">
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-10.jpg" alt="미니블랑 아이스크림 케이크" />
+                                    </figure>
+                                    <p class="product-text">미니블랑 아이스크림 케이크</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-11.jpg" alt="비욘드 쇼콜라 아이스크림 케이크" />
+                                    </figure>
+                                    <p class="product-text">비욘드 쇼콜라 아이스크림 케이크</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <figure>
+                                        <img src="./img/sub-products-12.jpg" alt="아이스크림&크로플" />
+                                    </figure>
+                                    <p class="product-text">아이스크림&크로플</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- pagination, paging -->
+                    <div class="paging">
+                        <a href="#" class="btn-prev"></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="btn-next"></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- //e: main -->
+
+        <!-- s : footer -->
+        <footer id="footer">
+            <div class="foot-icon">
+                <div class="foot-logo"><i class="hidden">Haagen-Dazs</i></div>
+                <a href="#">패밀리사이트</a>
+            </div>
+
+            <address>
+                <div class="foot-con">
+                    <div>
+                        <p>서울특별시 강남구 테헤란로 311 (역삼동, 아남타워 6층) | 사업자등록번호: 106-81-28964</p>
+                        <p>한국하겐-다즈(주) 대표: 김미조</p>
+                    </div>
+                    <div>
+                        <p>
+                            서울특별시 강남구 봉은사로112길 26, 5층 502호(삼성동, 한호빌딩) | 사업자등록번호:
+                            262-88-00829
+                        </p>
+                        <p>주식회사 에스와이피글로벌 대표: 김광용</p>
+                    </div>
+                </div>
+                <div class="foot-center">
+                    <p>하겐다즈 고객만족센터</p>
+                    <p>070-7549-7020</p>
+                </div>
+            </address>
+        </footer>
+        <!-- //e : footer -->
+    </body>
+</html>
+
+

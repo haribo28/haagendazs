@@ -1,0 +1,346 @@
+@charset 'utf-8';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+    --main-color: #600624;
+    --sub-color: #561229;
+    --bg-color: #fff8e3;
+    --gray1-color: #c9c9c9;
+    --gray2-color: #5c5c5c;
+    --gray3-color: #323232;
+    --white50: rgba(255, 255, 255, 0.5);
+}
+
+::selection {
+    background: var(--main-color);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%; /* fz62.5p = 10px = 1rem */
+}
+
+body {
+    font: 1.6rem/1.5 Pretendard, sans-serif;
+    color: var(--text-color);
+    text-transform: capitalize; /* ttc: 단어의 첫글자를 대문자로 */
+    word-break: keep-all;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.inner {
+    width: 140rem;
+    margin: 0 auto;
+    /* background: #ff5; */
+    position: relative;
+}
+
+#header {
+    background: var(--main-color);
+    height: 100%;
+}
+
+#header nav {
+    padding: 2.4rem 0 1.8rem;
+    padding: 1.94% 0 1.455%;
+}
+
+nav .header-logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40.6rem;
+}
+
+.logo a {
+    display: block;
+    background: url(../img/favicon.png) no-repeat 0 0 / cover;
+    width: 15.4rem;
+    height: 8.9rem;
+}
+
+.gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #fff;
+    gap: 16.3rem;
+    margin-top: 3.2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search {
+    display: flex;
+    width: 21.7rem;
+    height: 3.5rem;
+    border-bottom: 0.2rem solid var(--white50);
+}
+
+.search input {
+    background: transparent;
+    width: 19.4rem;
+    height: 2.2rem;
+    outline: none;
+}
+
+.search button {
+    display: block;
+    width: 2.3rem;
+    height: 2.2rem;
+    background: url(../img/search.svg) no-repeat 0 0 / cover;
+}
+
+.tablet-menu {
+    display: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 166px;
+    left: 98px;
+    width: 10%;
+
+    /* jQuery로 동작을 만들기 위한 준비 */
+    display: none;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.submenu li a {
+    display: block;
+    /* border: 1px solid #ff0; */
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    color: var(--gray3-color);
+}
+
+/* footer */
+
+#footer {
+    background: var(--sub-color);
+    margin-top: 23.4rem;
+    margin-top: 17%;
+    padding: 4rem 10rem;
+    padding: 2.08vw 5.208vw;
+}
+
+.foot-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 6rem;
+    padding-bottom: 4.366%;
+}
+
+.foot-icon a {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    /* padding: 2.07% 4.675% 2.07% 5.2%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.foot-icon a:after {
+    content: "";
+    display: block;
+    background: url(../img/familysite.svg) no-repeat 0 0;
+    width: 1.6rem;
+    height: 0.9rem;
+    /* aspect-ratio: 1/0.5625; */
+}
+
+.foot-logo {
+    display: block;
+    width: 15.1rem;
+    height: 9rem;
+    background: url(../img/favicon.png) no-repeat 0 0 / cover;
+}
+
+#footer address {
+    margin-top: 6rem;
+    margin-top: 4.366%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-con {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.foot-con div + div {
+    margin-top: 3.1rem;
+}
+
+.foot-con p + p {
+    color: var(--gray1-color);
+}
+
+.foot-center {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: right;
+}
+
+.foot-center p + p {
+    font-weight: 500;
+    font-size: 3.6rem;
+}
+
+/* quick */
+
+.quick-list {
+    background: var(--sub-color);
+    width: 6.4rem;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    gap: 3.5rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3.5rem;
+
+    display: none;
+}
+
+.tablet-logo {
+    display: block;
+    width: 2.5rem;
+    height: 2.3rem;
+    background: url(../img/icon-menu.svg) no-repeat 0 0 / cover;
+}
+
+@media (max-width: 1400px) {
+    .inner {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        width: 89.4rem;
+        width: 87.3%;
+    }
+
+    #header nav {
+        padding: 3rem 0 3rem 0;
+    }
+
+    nav .header-logo {
+        gap: 24rem;
+        gap: 26.8%;
+        justify-content: center;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .logo a {
+        width: 11.1rem;
+        height: 6.4rem;
+    }
+
+    .search {
+        border: 0;
+        width: 2.3rem;
+        height: 2.2rem;
+    }
+
+    .search input {
+        display: none;
+    }
+
+    .tablet-menu {
+        display: block;
+    }
+
+    .foot-con {
+        width: 50rem;
+    }
+}
+
+@media (max-width: 500px) {
+    nav .header-logo {
+        gap: 14rem;
+        gap: 36%;
+    }
+
+    .logo a {
+        width: 6.1rem;
+        height: 3.5rem;
+    }
+
+    .inner {
+        width: 39.8rem;
+        width: 92.5%;
+    }
+
+    #footer address {
+        flex-direction: column;
+    }
+
+    .foot-con {
+        width: 30rem;
+    }
+
+    .foot-con p {
+        font-size: 1.3rem;
+    }
+
+    .foot-center {
+        margin-top: 2.5rem;
+    }
+
+    .foot-center p {
+        font-size: 1.7rem;
+    }
+
+    .foot-center p + p {
+        font-size: 3rem;
+    }
+
+    .foot-logo {
+        width: 8.8rem;
+        height: 5.2rem;
+    }
+}
